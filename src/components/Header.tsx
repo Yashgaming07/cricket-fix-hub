@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button";
+import logo from "@/assets/crick-on-time-logo.jpg";
 
 const Header = () => {
   return (
@@ -6,8 +7,8 @@ const Header = () => {
       <div className="container flex h-16 items-center">
         <div className="mr-4 flex">
           <a className="mr-6 flex items-center space-x-2" href="/">
-            <div className="h-8 w-8 rounded-full bg-gradient-cricket"></div>
-            <span className="font-bold text-xl bg-gradient-cricket bg-clip-text text-transparent">
+            <img src={logo} alt="Crick on Time Logo" className="h-10 w-10 rounded-full object-cover" />
+            <span className="font-bold text-xl text-foreground">
               Crick on Time
             </span>
           </a>

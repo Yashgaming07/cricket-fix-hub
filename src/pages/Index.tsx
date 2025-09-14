@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import HeroSection from "@/components/HeroSection";
 import MatchCard from "@/components/MatchCard";
 import indiaAustriaThumb from "@/assets/india-austria-women.jpg";
+import logo from "@/assets/crick-on-time-logo.jpg";
 
 const Index = () => {
   const todaysFixtures = [
@@ -88,8 +89,8 @@ const Index = () => {
       <footer className="py-12 bg-card border-t">
         <div className="container text-center">
           <div className="flex items-center justify-center space-x-2 mb-4">
-            <div className="h-6 w-6 rounded-full bg-gradient-cricket"></div>
-            <span className="font-bold text-lg bg-gradient-cricket bg-clip-text text-transparent">
+            <img src={logo} alt="Crick on Time Logo" className="h-8 w-8 rounded-full object-cover" />
+            <span className="font-bold text-lg text-foreground">
               Crick on Time
             </span>
           </div>

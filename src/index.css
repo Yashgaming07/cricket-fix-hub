@@ -70,32 +70,32 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 150 15% 8%;
+    --background: 220 13% 9%;
     --foreground: 120 5% 95%;
 
-    --card: 150 12% 12%;
+    --card: 220 13% 7%;
     --card-foreground: 120 5% 95%;
 
-    --popover: 150 12% 12%;
+    --popover: 220 13% 7%;
     --popover-foreground: 120 5% 95%;
 
     --primary: 142 76% 46%;
-    --primary-foreground: 150 15% 8%;
+    --primary-foreground: 220 13% 9%;
 
-    --secondary: 150 8% 18%;
+    --secondary: 220 8% 15%;
     --secondary-foreground: 120 5% 95%;
 
-    --muted: 150 8% 18%;
+    --muted: 220 8% 15%;
     --muted-foreground: 120 5% 65%;
 
     --accent: 158 64% 52%;
-    --accent-foreground: 150 15% 8%;
+    --accent-foreground: 220 13% 9%;
 
     --destructive: 0 62.8% 50.6%;
     --destructive-foreground: 120 5% 95%;
 
-    --border: 150 8% 18%;
-    --input: 150 8% 18%;
+    --border: 220 8% 15%;
+    --input: 220 8% 15%;
     --ring: 142 76% 46%;
     
     /* Dark mode cricket colors */
