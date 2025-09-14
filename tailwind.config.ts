@@ -47,6 +47,12 @@ export default {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
+        cricket: {
+          green: "hsl(var(--cricket-green))",
+          field: "hsl(var(--cricket-field))",
+          gold: "hsl(var(--cricket-gold))",
+          white: "hsl(var(--cricket-white))",
+        },
         sidebar: {
           DEFAULT: "hsl(var(--sidebar-background))",
           foreground: "hsl(var(--sidebar-foreground))",
@@ -62,6 +68,14 @@ export default {
         lg: "var(--radius)",
         md: "calc(var(--radius) - 2px)",
         sm: "calc(var(--radius) - 4px)",
+      },
+      backgroundImage: {
+        'gradient-cricket': 'var(--gradient-cricket)',
+        'gradient-field': 'var(--gradient-field)',
+      },
+      boxShadow: {
+        'cricket': 'var(--shadow-cricket)',
+        'match-card': 'var(--shadow-match-card)',
       },
       keyframes: {
         "accordion-down": {
