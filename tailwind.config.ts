@@ -72,10 +72,14 @@ export default {
       backgroundImage: {
         'gradient-cricket': 'var(--gradient-cricket)',
         'gradient-field': 'var(--gradient-field)',
+        'gradient-hero': 'var(--gradient-hero)',
+        'gradient-card': 'var(--gradient-card)',
       },
       boxShadow: {
         'cricket': 'var(--shadow-cricket)',
         'match-card': 'var(--shadow-match-card)',
+        'premium': 'var(--shadow-premium)',
+        'glow': 'var(--shadow-glow)',
       },
       keyframes: {
         "accordion-down": {
@@ -94,10 +98,61 @@ export default {
             height: "0",
           },
         },
+        "fade-in": {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(30px)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
+        "slide-up": {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(60px)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
+        "scale-in": {
+          "0%": {
+            opacity: "0",
+            transform: "scale(0.9)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "scale(1)",
+          },
+        },
+        "float": {
+          "0%, 100%": {
+            transform: "translateY(0px)",
+          },
+          "50%": {
+            transform: "translateY(-20px)",
+          },
+        },
+        "glow": {
+          "0%, 100%": {
+            boxShadow: "0 0 20px hsl(var(--cricket-green) / 0.1)",
+          },
+          "50%": {
+            boxShadow: "0 0 40px hsl(var(--cricket-green) / 0.3)",
+          },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "fade-in": "fade-in 0.6s ease-out forwards",
+        "slide-up": "slide-up 0.8s ease-out forwards",
+        "scale-in": "scale-in 0.5s ease-out forwards",
+        "float": "float 6s ease-in-out infinite",
+        "glow": "glow 2s ease-in-out infinite",
       },
     },
   },

@@ -45,30 +45,34 @@ const Index = () => {
       <HeroSection />
       
       {/* Today's Fixtures Section */}
-      <section id="fixtures" className="py-16">
-        <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Today's Fixtures</h2>
-            <p className="text-muted-foreground">Don't miss today's exciting cricket matches</p>
+      <section id="fixtures" className="py-20 relative">
+        <div className="absolute inset-0 bg-gradient-hero opacity-30"></div>
+        <div className="container relative">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-4xl font-bold mb-6 bg-gradient-cricket bg-clip-text text-transparent">Today's Fixtures</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Don't miss today's exciting cricket matches with HD streaming quality</p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 animate-slide-up">
             {todaysFixtures.map((match, index) => (
-              <MatchCard key={index} {...match} />
+              <div key={index} className="animate-scale-in" style={{animationDelay: `${index * 0.1}s`}}>
+                <MatchCard {...match} />
+              </div>
             ))}
           </div>
         </div>
       </section>
 
       {/* Women's Cricket Section */}
-      <section id="women" className="py-16 bg-muted/30">
-        <div className="container">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Women's Cricket</h2>
-            <p className="text-muted-foreground">Supporting women's cricket around the world</p>
+      <section id="women" className="py-20 glass-effect relative">
+        <div className="absolute inset-0 bg-gradient-card opacity-50"></div>
+        <div className="container relative">
+          <div className="text-center mb-16 animate-fade-in">
+            <h2 className="text-4xl font-bold mb-6 bg-gradient-cricket bg-clip-text text-transparent">Women's Cricket</h2>
+            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">Supporting women's cricket around the world with premium streaming</p>
           </div>
           
-          <div className="max-w-md mx-auto">
+          <div className="max-w-md mx-auto animate-scale-in">
             <MatchCard
               team1="India Women"
               team2="Austria Women"
@@ -86,39 +90,40 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-12 bg-card border-t">
-        <div className="container text-center">
-          <div className="flex items-center justify-center space-x-2 mb-4">
-            <img src={logo} alt="Crick on Time Logo" className="h-8 w-8 rounded-full object-cover" />
-            <span className="font-bold text-lg text-foreground">
+      <footer className="py-16 glass-effect border-t border-muted/20 relative">
+        <div className="absolute inset-0 bg-gradient-card opacity-30"></div>
+        <div className="container text-center relative">
+          <div className="flex items-center justify-center space-x-3 mb-6 animate-fade-in">
+            <img src={logo} alt="Crick on Time Logo" className="h-10 w-10 rounded-full object-cover animate-glow" />
+            <span className="font-bold text-2xl text-foreground">
               Crick on Time
             </span>
           </div>
-          <p className="text-sm text-muted-foreground mb-4">
-            Your premier destination for live cricket streaming and updates
+          <p className="text-base text-muted-foreground mb-8 max-w-lg mx-auto animate-slide-up">
+            Your premier destination for live cricket streaming and updates with crystal clear quality
           </p>
-          <div className="flex justify-center gap-4">
+          <div className="flex justify-center gap-6 animate-scale-in">
             <a 
               href="https://crickontime.pages.dev/" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-sm text-cricket-green hover:underline"
+              className="text-base text-cricket-green hover:underline smooth-transition hover:scale-105 font-medium"
             >
-              Main Cricket Site
+              🏏 Main Cricket Site
             </a>
             <a 
               href="https://jstartv.pages.dev/jstar?id=1142" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-sm text-cricket-green hover:underline"
+              className="text-base text-cricket-green hover:underline smooth-transition hover:scale-105 font-medium"
             >
-              Women's Live Stream
+              📺 Women's Live Stream
             </a>
             <a 
               href="https://t.me/+JtamklRCRxAxMTg1" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="text-sm text-blue-500 hover:underline"
+              className="text-base text-blue-500 hover:underline smooth-transition hover:scale-105 font-medium"
             >
               📱 Join Telegram Channel
             </a>
