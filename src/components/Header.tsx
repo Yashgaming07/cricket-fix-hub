@@ -36,6 +36,16 @@ const Header = () => {
               Main Site
             </a>
           </Button>
+          <Button 
+            variant="outline" 
+            size="sm" 
+            asChild
+            className="border-blue-500 text-blue-500 hover:bg-blue-500 hover:text-white"
+          >
+            <a href="https://t.me/+JtamklRCRxAxMTg1" target="_blank" rel="noopener noreferrer">
+              📱 Telegram
+            </a>
+          </Button>
         </nav>
       </div>
     </header>

@@ -113,6 +113,14 @@ const Index = () => {
             >
               Women's Live Stream
             </a>
+            <a 
+              href="https://t.me/+JtamklRCRxAxMTg1" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-sm text-blue-500 hover:underline"
+            >
+              📱 Join Telegram Channel
+            </a>
           </div>
         </div>
       </footer>
